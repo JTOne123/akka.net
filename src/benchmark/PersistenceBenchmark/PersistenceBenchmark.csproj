@@ -6,7 +6,15 @@
     <TargetFramework>$(NetFrameworkTestVersion)</TargetFramework>
     <ServerGarbageCollection>true</ServerGarbageCollection>
     <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+up>
 
   <ItemGroup>
     <Content Include="App.config" />
