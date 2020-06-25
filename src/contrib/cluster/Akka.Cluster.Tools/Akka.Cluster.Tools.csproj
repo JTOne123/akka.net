@@ -7,7 +7,15 @@
     <TargetFrameworks>$(NetStandardLibVersion)</TargetFrameworks>
     <PackageTags>$(AkkaPackageTags);network;cluster</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <EmbeddedResource Include="Client\reference.conf;PublishSubscribe\reference.conf;Singleton\reference.conf" />
